@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CrossWise Ops Support</title>
+    <meta name="robots" content="index,follow" />
+    <style>
+      :root { color-scheme: light dark; }
+      body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Inter,Arial,sans-serif; margin: 0; padding: 0; line-height: 1.5; }
+      .wrap { max-width: 860px; margin: 0 auto; padding: 28px 18px 48px; }
+      .card { border: 1px solid rgba(0,0,0,.12); border-radius: 14px; padding: 18px; background: rgba(255,255,255,.02); }
+      h1 { margin: 0 0 6px; font-size: 28px; }
+      p { margin: 10px 0; }
+      .muted { opacity: .75; }
+      a { word-break: break-word; }
+      ul { margin: 10px 0 0 20px; }
+      code { padding: 2px 6px; border-radius: 8px; border: 1px solid rgba(0,0,0,.12); }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <h1>CrossWise Ops Support</h1>
+      <p class="muted">Help, troubleshooting, and account support.</p>
+
+      <section class="card">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:support@crosswise-ops.com">support@crosswise-ops.com</a></p>
+        <p class="muted">
+          When contacting support, please include your account email and a short description of the issue.
+        </p>
+      </section>
+
+      <section class="card" style="margin-top:14px;">
+        <h2>Common Topics</h2>
+        <ul>
+          <li>Login or account access issues</li>
+          <li>Time entries, edit requests, and approvals</li>
+          <li>Inventory logging or asset tracking questions</li>
+          <li>Bug reports and feature requests</li>
+        </ul>
+      </section>
+
+      <section class="card" style="margin-top:14px;">
+        <h2>Account Deletion</h2>
+        <p>
+          You can delete your account from inside the app under <strong>Settings</strong>.
+          If you cannot access the app, email support and request account deletion from your registered email address.
+        </p>
+      </section>
+
+      <p class="muted" style="margin-top:18px;">
+        Last updated: <span id="updated"></span>
+      </p>
+    </main>
+
+    <script>
+      document.getElementById("updated").textContent = new Date().toLocaleDateString();
+    </script>
+  </body>
+</html>
